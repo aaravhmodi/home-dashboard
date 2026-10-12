@@ -12,7 +12,7 @@ in `config/`. It is only reachable over Tailscale:
 ## What's on it
 
 - **Top:** live CPU, memory, CPU temperature, uptime and storage for the server.
-- **Apps:** Internship Tracker, Study Agent (and its browser), Enerzen web and API.
+- **Apps:** Internship Tracker, Study Agent (and its browser), Enerzen web and API, n8n.
 - **Monitoring:** Uptime Kuma and Grafana.
 - **Behind the scenes:** PostgreSQL, Redis, the Cloudflare tunnel and Prometheus.
 - **Bookmarks:** GitHub repos, Tailscale, Vercel, Cloudflare, and OpenAI/xAI usage.

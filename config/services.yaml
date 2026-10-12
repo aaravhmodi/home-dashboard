@@ -44,6 +44,14 @@
         server: local
         container: enerzen-api-1
 
+    - n8n:
+        href: http://100.76.57.23:5678
+        description: Workflows; runs Study Agent's nightly sync, morning brief and reminders
+        icon: n8n.png
+        siteMonitor: http://100.76.57.23:5678/healthz
+        server: local
+        container: n8n-n8n-1
+
 - Monitoring:
     - Uptime Kuma:
         href: http://100.76.57.23:3001
