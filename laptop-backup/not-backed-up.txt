@@ -21,3 +21,7 @@ base station parse
 software-dashboard
 field regressions
 prescription visualization
+# Robot nitrogen-application data and the take-home built on it; remove these two lines
+# if they aren't Upside's.
+robot_runs_eval.csv
+takehome
