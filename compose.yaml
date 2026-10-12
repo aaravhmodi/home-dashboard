@@ -1,0 +1,13 @@
+# The home dashboard. Published only on the server's Tailscale address, so it can't be
+# reached from the Wi-Fi network or the internet.
+services:
+  homepage:
+    image: ghcr.io/gethomepage/homepage:v2.5.0
+    restart: unless-stopped
+    environment:
+      # Homepage refuses requests for any other hostname.
+      HOMEPAGE_ALLOWED_HOSTS: 100.76.57.23,100.76.57.23:80
+    volumes:
+      - ./config:/app/config
+    ports:
+      - "100.76.57.23:80:3000"
