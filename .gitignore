@@ -1,3 +1,7 @@
 # Written by Homepage at runtime
 config/logs/
+config/custom.css
+config/custom.js
+config/kubernetes.yaml
+config/proxmox.yaml
 .env
