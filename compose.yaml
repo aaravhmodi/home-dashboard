@@ -11,3 +11,17 @@ services:
       - ./config:/app/config
     ports:
       - "100.76.57.23:80:3000"
+    depends_on:
+      - docker-proxy
+
+  # Homepage reads container status and stats through this proxy instead of the Docker
+  # socket itself: it allows only read-only container queries, so the dashboard can't
+  # start, stop or create anything. Not published; only Homepage can reach it.
+  docker-proxy:
+    image: ghcr.io/tecnativa/docker-socket-proxy:v0.5.0
+    restart: unless-stopped
+    environment:
+      CONTAINERS: 1
+      POST: 0
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro

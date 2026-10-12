@@ -1,0 +1,6 @@
+---
+# How Homepage reaches Docker: through the read-only proxy in compose.yaml.
+# https://gethomepage.dev/configs/docker/
+local:
+  host: docker-proxy
+  port: 2375
