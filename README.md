@@ -1,9 +1,20 @@
+<div align="center">
+
 # Home dashboard
 
-One start page for the home server (the MacBook running Ubuntu on Tailscale): every app
-with a live up/down dot, server CPU, memory, disk and temperature, and links to the
-monitoring tools.
+**One start page for my home server:** every app with a live up/down dot,<br>
+server CPU, memory, disk and temperature, and links to the monitoring tools.
 
+![Homepage](https://img.shields.io/badge/Homepage-v2.5-1f2937?style=flat-square)
+![Docker Compose](https://img.shields.io/badge/Docker_Compose-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Tailscale only](https://img.shields.io/badge/Tailscale-only-242424?style=flat-square&logo=tailscale&logoColor=white)
+![Deploys on push](https://img.shields.io/badge/deploys-on_push-059669?style=flat-square)
+
+<img src="docs/dashboard.png" width="900" alt="The dashboard: server stats along the top, then tiles for apps, monitoring and background services, each with a green status dot, and bookmarks below">
+
+</div>
+
+The server is a MacBook running Ubuntu on Tailscale.
 It's [Homepage](https://gethomepage.dev) running in Docker, configured by the YAML files
 in `config/`. It is only reachable over Tailscale:
 
