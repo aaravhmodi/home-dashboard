@@ -55,3 +55,11 @@ or `<app>.png` from [Dashboard Icons](https://dashboardicons.com).
 - The server's folder is a clone of this repo, deployed by the same push-to-deploy
   cron as the other projects (you get a 🚀 push when it's live).
 - Uptime Kuma checks it like the other apps, and the server alerts know its containers.
+
+## Laptop backup
+
+`laptop-backup/backup.sh` (run from Git Bash on the laptop) copies `Documents/Projects`
+and Notepad's open tabs to the server, under `~/backups/laptop/`. Upside Robotics work
+isn't copied: the folders in `laptop-backup/not-backed-up.txt`, and Notepad notes that
+mention Upside work or open files from those folders. Folders that are rebuilt from the
+project files (`node_modules`, Python environments, caches) are skipped too.

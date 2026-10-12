@@ -1,0 +1,23 @@
+# Folders in Documents/Projects that are never copied to the server: Upside Robotics work.
+# One folder name per line. Found by their Upside-Robotics GitHub remotes or contents.
+backend-pipeline
+backend-pipeline-heatmap-tod
+bp-navcov
+gdd-bot
+gym
+petting zoo
+planter-monitor-extension
+portal
+prescription automation
+robot-etl-pipeline
+shap
+upside-fields
+weather automation
+weather
+Testing
+# No Upside remote, but Upside work:
+upside-gis
+base station parse
+software-dashboard
+field regressions
+prescription visualization
