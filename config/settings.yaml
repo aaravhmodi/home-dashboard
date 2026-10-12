@@ -1,0 +1,26 @@
+---
+# Look and layout. https://gethomepage.dev/configs/settings/
+title: Home server
+description: Aarav's apps and monitoring, over Tailscale
+theme: dark
+color: slate
+headerStyle: boxed
+statusStyle: dot
+target: _blank
+hideVersion: true
+useEqualHeights: true
+# Type anywhere on the page to jump to an app.
+quicklaunch:
+  searchDescriptions: true
+  hideInternetSearch: true
+
+layout:
+  Apps:
+    style: row
+    columns: 3
+  Monitoring:
+    style: row
+    columns: 2
+  Behind the scenes:
+    style: row
+    columns: 4
