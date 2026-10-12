@@ -43,3 +43,47 @@
         siteMonitor: http://100.76.57.23:8001/health
         server: local
         container: enerzen-api-1
+
+- Monitoring:
+    - Uptime Kuma:
+        href: http://100.76.57.23:3001
+        description: Up/down history for every app; sends the phone alerts
+        icon: uptime-kuma.png
+        siteMonitor: http://100.76.57.23:3001
+        server: local
+        container: homelab-uptime-kuma-1
+
+    - Grafana:
+        href: http://100.76.57.23:3002
+        description: Server graphs over time (CPU, memory, disk, apps)
+        icon: grafana.png
+        siteMonitor: http://100.76.57.23:3002/api/health
+        server: local
+        container: monitoring-grafana-1
+
+# Services the apps rely on. No page to open; the tile shows whether the container is
+# running and what it's using.
+- Behind the scenes:
+    - PostgreSQL:
+        description: Database
+        icon: postgres.png
+        server: local
+        container: homelab-postgres-1
+
+    - Redis:
+        description: Cache and queues
+        icon: redis.png
+        server: local
+        container: homelab-redis-1
+
+    - Cloudflare tunnel:
+        description: Makes public sites reachable from the internet
+        icon: cloudflare.png
+        server: local
+        container: cloudflared
+
+    - Prometheus:
+        description: Collects the numbers behind Grafana
+        icon: prometheus.png
+        server: local
+        container: monitoring-prometheus-1
