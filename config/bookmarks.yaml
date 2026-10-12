@@ -1,0 +1,32 @@
+---
+# Links along the bottom. https://gethomepage.dev/configs/bookmarks/
+
+- Code:
+    - intern-agent:
+        - icon: github.png
+          href: https://github.com/aaravhmodi/intern-agent
+    - study-agent:
+        - icon: github.png
+          href: https://github.com/aaravhmodi/study-agent
+    - enerzen-prototype:
+        - icon: github.png
+          href: https://github.com/aaravhmodi/enerzen-prototype
+
+- Accounts:
+    - Tailscale devices:
+        - icon: tailscale.png
+          href: https://login.tailscale.com/admin/machines
+    - Vercel:
+        - icon: vercel.png
+          href: https://vercel.com/dashboard
+    - Cloudflare tunnels:
+        - icon: cloudflare.png
+          href: https://one.dash.cloudflare.com/
+
+- Spending:
+    - OpenAI usage:
+        - icon: openai.png
+          href: https://platform.openai.com/usage
+    - xAI usage:
+        - icon: mdi-alpha-x-box
+          href: https://console.x.ai/
