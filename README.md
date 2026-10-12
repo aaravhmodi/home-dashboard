@@ -29,7 +29,9 @@ underneath, its container's state, CPU and memory. Type anywhere on the page to 
 | Bookmarks | `config/bookmarks.yaml` |
 | Title, theme, columns | `config/settings.yaml` |
 
-Then commit and run `./deploy.sh`. Homepage picks up config changes without a restart.
+Then commit and push to `main`. The server checks GitHub every minute, pulls the new
+commit and restarts the dashboard; a commit that breaks it is rolled back. Homepage
+picks up config changes without a restart.
 Icons: `mdi-<name>` from [Material Design Icons](https://pictogrammers.com/library/mdi/),
 or `<app>.png` from [Dashboard Icons](https://dashboardicons.com).
 
@@ -39,4 +41,6 @@ or `<app>.png` from [Dashboard Icons](https://dashboardicons.com).
   (`100.76.57.23:80`), so nothing outside your tailnet can reach it.
 - Homepage reads container status through `docker-proxy`, which allows only read-only
   container queries, so the dashboard can't start, stop or change anything.
+- The server's folder is a clone of this repo, deployed by the same push-to-deploy
+  cron as the other projects (you get a 🚀 push when it's live).
 - Uptime Kuma checks it like the other apps, and the server alerts know its containers.
