@@ -1,0 +1,45 @@
+---
+# The app tiles. https://gethomepage.dev/configs/services/
+#   href         what opens when you click the tile
+#   siteMonitor  checked every few seconds for the status dot and response time
+#   container    shows that container's state, CPU and memory under the tile
+
+- Apps:
+    - Internship Tracker:
+        href: http://100.76.57.23:8765
+        description: Postings, founders, drafts and application answers
+        icon: mdi-briefcase-search
+        siteMonitor: http://100.76.57.23:8765
+        server: local
+        container: intern-agent-dashboard-1
+
+    - Study Agent:
+        href: http://100.76.57.23:8000
+        description: Course questions, notes and assessments
+        icon: mdi-school
+        siteMonitor: http://100.76.57.23:8000/health
+        server: local
+        container: study-agent-dashboard-1
+
+    - Study Agent browser:
+        href: http://100.76.57.23:6080
+        description: The browser Study Agent uses to read LEARN
+        icon: mdi-monitor-eye
+        server: local
+        container: study-agent-browser-1
+
+    - Enerzen:
+        href: http://100.76.57.23:3000
+        description: Enerzen web app
+        icon: mdi-lightning-bolt
+        siteMonitor: http://100.76.57.23:3000
+        server: local
+        container: enerzen-web-1
+
+    - Enerzen API:
+        href: http://100.76.57.23:8001/docs
+        description: Enerzen backend and API docs
+        icon: mdi-api
+        siteMonitor: http://100.76.57.23:8001/health
+        server: local
+        container: enerzen-api-1
