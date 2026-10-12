@@ -1,0 +1,30 @@
+---
+# The strip across the top of the page. https://gethomepage.dev/configs/info-widgets/
+
+# Live server stats. The container shares the server's kernel, so these are the
+# MacBook's own CPU, memory, disk and temperature.
+- resources:
+    label: Server
+    cpu: true
+    memory: true
+    cputemp: true
+    tempmin: 30
+    tempmax: 100
+    units: metric
+    uptime: true
+    expanded: true
+
+- resources:
+    label: Storage
+    disk: /
+    expanded: true
+
+- datetime:
+    text_size: xl
+    locale: en-CA
+    format:
+      weekday: long
+      month: short
+      day: numeric
+      hour: numeric
+      minute: 2-digit
